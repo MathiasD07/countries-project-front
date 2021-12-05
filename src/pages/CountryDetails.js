@@ -13,6 +13,14 @@ const CountryDetails = () => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     };
 
+    const boolFormat = (x) => {
+        if (x === 1) {
+            return "Yes";
+        } else {
+            return "No";
+        }
+    };
+
     useEffect(() => {
         axios.get('https://mysterious-woodland-00550.herokuapp.com/api/countries/' + countryId)
             .then((res) => {
@@ -35,8 +43,8 @@ const CountryDetails = () => {
                 <li>Domain Name : {data.tld}</li>
                 <li>Female Demonym : {data.female_demonym}</li>
                 <li>Male Demonym : {data.male_demonym}</li>
-                <li>Independent : {data.independent}</li>
-                <li>United Nations Member : {data.unMember}</li>
+                <li>Independent : {boolFormat(data.independent)}</li>
+                <li>United Nations Member : {boolFormat(data.unMember)}</li>
                 <li>Latitude : {data.lat}</li>
                 <li>Longitude : {data.lng}</li>
                 <li>Population : {numberFormat(data.population)}</li>
