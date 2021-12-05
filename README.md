@@ -8,6 +8,12 @@ Link to the heroku : [Click here](https://blooming-peak-05493.herokuapp.com/)
 - Run `npm install` then `npm start`
 - Go to [http://localhost:3000](http://localhost:3000) to view the project in your browser
 
+## What could be improved ?
+- Add the ability to search for a country
+- Allow to add a missing country
+- Improve the app's design
+- Add a loading skeleton
+
 ## Available Scripts
 
 In the project directory, you can run:
