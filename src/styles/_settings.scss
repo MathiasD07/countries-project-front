@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$font: "Lato", sans-serif;
+
+$link-color-1: #004dff;
+$primary-color: #efac64;
+$color-white: #f7f7f7;
+$color-gray: #282c34;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0.4rem auto;
+  max-width: 70%;
+  font-family: $font;
+  font-size: 20px;
+  color: $color-gray;
+  background-color: $color-white;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-gray;
+  cursor: pointer;
+}
