@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import CountryDetails from "../pages/CountryDetails";
 
 const Card = (props) => {
     const { country } = props;
